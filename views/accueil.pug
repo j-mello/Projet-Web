@@ -1,0 +1,18 @@
+extends layout
+
+block dynamicContent
+    .form-login
+      form(action='/send' method='POST')
+        label(for='name') Identifiant :
+        input#name(type='text' name='id')
+        br
+        label(for='password') Mot de passe :
+        input#passeword(type='password' name='password')
+        br
+        button(type='submit') Envoyer
+  
+    .form-register
+      p Pas encore membre ? Clique en-dessous !
+      br
+      a(href='./creercompte') Créer un compte !
+      script(src='./pageentree.js')

@@ -1,0 +1,23 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title  Bienvenue sur To Do List 
+  link(rel='stylesheet' href='miseenpage.css')
+  meta(name='viewport' value='width=device-width, initial-scale=1.0')
+body
+.creercompteform
+  form(action='/creercompte/create' method='POST')
+    p.titre Inscris-toi
+    label(for='createname') Identifiant :
+    input#createname(type='text' name='createid')
+    br
+    label(for='createpassword') Mot de passe :
+    input#createpassword(type='password' name='createpassword')
+    br
+    label(for='createemail') Adresse email :
+    input#createemail(type='email' name='createemail')
+    br
+    label(for='createbirthdate') Date de naissance :
+    input#createbirthdate(type='date' name='createbirthdate')
+    br
+    button(type='submit') Envoyer

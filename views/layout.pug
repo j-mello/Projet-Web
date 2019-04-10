@@ -1,0 +1,16 @@
+html
+  head
+    title Ma To Do List
+    link(rel="stylesheet" href="/miseenpage.css")
+  body
+    .container
+      header
+        h1 Ma To Do List
+        if username
+          span Connecté en tant que #{username}
+            a(href="/logout") (Déconnexion)
+        else
+          span Pas connecté
+      nav
+      .content
+        block dynamicContent

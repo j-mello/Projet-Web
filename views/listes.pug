@@ -1,0 +1,14 @@
+extends layout
+
+block dynamicContent
+    if info
+        p= info
+        #myDIV.header
+            h2 Ma To Do List
+            input#myInput(type='text', placeholder='Nom de la tâche')
+            span.addBtn(onclick='newElement()') Ajouter
+        ul#myUL 
+    else 
+        p Merci de vous connecter pour accèder à cette page
+    script
+        include todo.js

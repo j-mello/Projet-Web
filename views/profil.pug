@@ -1,0 +1,9 @@
+extends layout
+
+block dynamicContent
+    if info
+      p= info
+      p Pour accèder à vos tâches, cliquer ci-dessous
+      a(href="./listes") Vos tâches
+    else
+      p Merci de bien vouloir vous connecter
